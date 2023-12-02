@@ -42,8 +42,8 @@ def part_two(input: str) -> int:
 def main():
     with open("input.txt") as calibrations:
         input = calibrations.read().strip()
-        print(f"The calibrated sum is {part_one(input)}")
-        print(f"The new calibrated sum is {part_two(input)}")
+        print(f"The calibrated sum is {part_one(input)}.")
+        print(f"The new calibrated sum is {part_two(input)}.")
 
 
 if __name__ == "__main__":
