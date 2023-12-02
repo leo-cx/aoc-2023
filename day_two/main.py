@@ -26,6 +26,7 @@ def part_one(input: str) -> int:
             sum += id
     return sum
 
+
 def part_two(input: str) -> int:
     pset = 0
     # "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green"
@@ -53,7 +54,7 @@ def part_two(input: str) -> int:
                 colors[color] += int(num)
                 if colors[color] > max[color]:
                     max[color] = colors[color]
-        pset += (max["red"] * max["green"] * max["blue"])
+        pset += max["red"] * max["green"] * max["blue"]
     return pset
 
 
